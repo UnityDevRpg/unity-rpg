@@ -5,8 +5,9 @@ using UnityEngine;
 public class Shootingcode : MonoBehaviour
 {
     // Start is called before the first frame update
-
     
+
+
     public Camera fpscam;
     public float damage = 10f;
 

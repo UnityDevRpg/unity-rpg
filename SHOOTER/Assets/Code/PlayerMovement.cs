@@ -7,9 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public float groundDrag;
     public float PlayerHeight;
     
-    public Quest quest;
-    int playerGold = 0;
-    int playerExp = 0;
+    
     bool grounded;
     public LayerMask whatIsGrounded;
     public AudioSource src;

@@ -21,6 +21,9 @@ public class EnemyAi : MonoBehaviour
     public float walkPointRange;
     public GameObject bullet;
     public Transform bulletTransform;
+    int playerGold = 0;
+    int playerExp = 0;
+
     
     //Attacking
     
@@ -53,6 +56,7 @@ public class EnemyAi : MonoBehaviour
     
     private void Update()
     {
+
         //Check for sight and attack range
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
@@ -152,6 +156,8 @@ void Attack()
         if (health <= 0)
         {
             DestroyEnemy();
+
+
             
             
         }
